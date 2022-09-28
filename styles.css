@@ -3,15 +3,27 @@
     padding: 0;
 }
 
+/* header section */
+
 .header{
-    background-color: rgb(33,44,54);
-    height: 500px
+    background-color: #1f2937;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 20px;
+    background-color: #1f2937;
+}
+
+h4 {
+    font-size: 24px;
+    color: #f9faf8;
 }
 
 nav ul{
@@ -22,22 +34,21 @@ nav ul li{
     display: flex;
     justify-content: space-between;
     margin: auto 10px;
+    color: #e5e7eb
 }
 
 .details {
     display: flex;
-    justify-content: space-around;
-    margin-top: 200px;
-}
-
-.details div{
-    width: 50%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .details h1{
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    text-align: start;
+    width: 50%;
 }
 
 .details p{
@@ -48,43 +59,118 @@ nav ul li{
 
 button{
     background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
     border-color: none;
     border-radius: 10px;
-    width: 70px;
+    width: 115px;
     height: 30px;
+    border-style: hidden;
+    margin-top: 5px;
 }
 
 .header img{
     background-color: gray;
-    border: red;
+    border: 100px solid gray
     
 }
 
+/* info section */
+
 .info {
-    height: 300px;
+    height: 500px;
 }
 
 .info h1 {
     text-align: center;
+    margin-top: 20px;
 }
 
-.info .contents {
+.contents {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .contents div{
     display: flex;
     flex-direction: column;
-    align-content: space-around;
     margin-top: 50px;
+    
 }
 
 .contents img{
+    display: flex;
     border: 5px #3882f6 solid;
     border-radius: 10px;
+    width: 45%;
+    height: 150px;
+    align-self: center;
+}
+
+span {
+    font-size: 18px;
+    color: lightgray
 }
 
 .contents span {
     margin-top: 5px;
+    width: 45%;
+    align-self: center;
+}
+
+/* qoute section */
+
+.quotes {
+    display: flex;
+    height: 500px;
+    padding: 300px auto;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes p{
+    text-align: center;
+    width: 50%;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+}
+
+/* contact section */
+
+.contact {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-background {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 175px;
+    background-color: rgb(17, 128, 238);
+    border-radius: 10px;
+}
+
+.contact-background > div > h2 {
+    font-size: 24px;
+    color:#f9faf8;
+}
+
+.contact-background button {
+    border-color: #f9faf8;
+    border-style: solid;
+}
+
+.license {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
